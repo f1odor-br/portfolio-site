@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Affiliate Marketing notes</title>
+  <meta name="description" content="Конспект: офферы, креативы, аккаунты, Telegram, лайфхаки. Кратко и по делу." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="notes.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-container">
+      <a class="nav-logo" href="index.html">← Портфолио</a>
+      <div class="nav-links">
+        <a href="#offers">Offers</a>
+        <a href="#creatives">Creatives</a>
+        <a href="#accounts">Accounts</a>
+        <a href="#tg">Telegram</a>
+        <a href="#hacks">Lifehacks</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="header">
+    <div class="container">
+      <h1>Affiliate Marketing notes</h1>
+      <p class="subtitle">Короткие заметки по арбитражу трафика (RUS)</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="offers" class="card">
+      <h2>Офферы</h2>
+      <ul>
+        <li>Локализация по GEO: язык, бренды, блогеры.</li>
+        <li>Белые вертикали и связки — меньше банов, проще масштаб.</li>
+        <li>Пост‑оплата там, где возможно, — ниже риски.</li>
+      </ul>
+    </section>
+
+    <section id="creatives" class="card">
+      <h2>Креативы</h2>
+      <ul>
+        <li>10+ сценариев на тест, обновлять каждые 3-7 дней.</li>
+        <li>VSL: хук → идея → эмпатия → доказательства → оффер.</li>
+        <li>ИИ‑генерация видео/баннеров, UGC при необходимости.</li>
+      </ul>
+    </section>
+
+    <section id="accounts" class="card">
+      <h2>Аккаунты</h2>
+      <ul>
+        <li>Регать вручную; новая SIM и Outlook под каждый аккаунт.</li>
+        <li>Поднимать лимит картой (AmEx BR) и переводить на траст.</li>
+        <li>Не смешивать GEO; 2–3 кабинета параллельно.</li>
+      </ul>
+    </section>
+
+    <section id="tg" class="card">
+      <h2>Telegram</h2>
+      <ul>
+        <li>Многостраничные сайты + SEO для охвата.</li>
+        <li>Лайв‑контент для вовлечения; личное участие.</li>
+        <li>Нейро‑креативы — бесплатный охват.</li>
+      </ul>
+    </section>
+
+    <section id="hacks" class="card">
+      <h2>Лайфхаки</h2>
+      <ul>
+        <li>Просадка — пауза, рестарт после 50 лидов.</li>
+        <li>Всегда разделяйте по GEO.</li>
+        <li>Трастовый аккаунт важнее количества.</li>
+      </ul>
+    </section>
+
+    <footer class="footer">
+      <a href="index.html" class="btn">← Вернуться в портфолио</a>
+    </footer>
+  </main>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click',e=>{const id=a.getAttribute('href');if(id.length>1){e.preventDefault();document.querySelector(id)?.scrollIntoView({behavior:'smooth',block:'start'});} });
+    });
+  </script>
+</body>
+</html>
