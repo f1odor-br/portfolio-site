@@ -1,0 +1,22 @@
+:root{--bg:#0f1220;--card:rgba(255,255,255,.05);--text:#e7e9ee;--muted:#aab0c0;--accent:#8b5cf6;--accent2:#22d3ee;--border:rgba(255,255,255,.12);--radius:12px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu;line-height:1.6;background:linear-gradient(180deg,#0f1220,#13162a);color:var(--text)}
+.container{max-width:1100px;margin:0 auto;padding:96px 20px 40px}
+.nav{position:fixed;inset:0 0 auto 0;backdrop-filter:saturate(160%) blur(10px);background:rgba(15,18,32,.7);border-bottom:1px solid var(--border);z-index:10}
+.nav-container{max-width:1100px;margin:0 auto;padding:10px 20px;display:flex;gap:20px;align-items:center;justify-content:space-between}
+.nav-logo{color:var(--text);text-decoration:none;font-weight:700}
+.nav-links a{color:var(--muted);text-decoration:none;margin-left:14px;padding:6px 10px;border-radius:8px}
+.nav-links a:hover{background:rgba(255,255,255,.06);color:var(--text)}
+.header{padding-top:80px}
+.header h1{font-size:clamp(28px,4vw,40px);margin:0 0 8px;background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.subtitle{color:var(--muted);margin:0}
+.card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:24px;margin:18px 0}
+.card h2{margin-top:0}
+.hero-img{width:100%;height:auto;display:block;border-radius:10px;border:1px solid var(--border);box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.content table{width:100%;border-collapse:collapse;margin:16px 0}
+.content th,.content td{border:1px solid var(--border);padding:10px;vertical-align:top}
+.content thead th{background:rgba(255,255,255,.06)}
+.content ul{margin:10px 0 10px 18px}
+.footer{display:flex;justify-content:center;margin:24px 0}
+.btn{display:inline-block;background:var(--card);border:1px solid var(--border);padding:10px 16px;border-radius:10px;color:var(--text);text-decoration:none}
+.btn:hover{border-color:var(--accent)}
+@media (max-width:700px){.nav-links{display:flex;gap:8px;flex-wrap:wrap}.container{padding:80px 16px 32px}.content table{font-size:14px}}

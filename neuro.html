@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Нейро‑доступ — Гайды и структура</title>
+  <meta name="description" content="Подборка материалов: работа с рекламными кабинетами, креативы, аккаунты, Telegram и лайфхаки. Рус/Eng." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="neuro.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-container">
+      <a class="nav-logo" href="index.html">← Портфолио</a>
+      <div class="nav-links">
+        <a href="#rus">RUS</a>
+        <a href="#eng">ENG</a>
+        <a href="#structure">Structure</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="header">
+    <div class="container">
+      <h1>Нейро‑доступ</h1>
+      <p class="subtitle">Сборник практических заметок по арбитражу, креативам, аккаунтам и Telegram (RUS/ENG)</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="structure" class="card">
+      <h2>Website Structure</h2>
+      <picture>
+        <img src="website_structure.jpg" alt="Website Structure" class="hero-img" />
+      </picture>
+      <p class="muted">Схема разделов для двух языков: навигация, разделы, Telegram, аккаунты, креативы и лайфхаки.</p>
+    </section>
+
+    <section id="rus" class="card">
+      <h2>Русская версия</h2>
+      <!-- RUS content injected -->
+      <div class="content">
+        REPLACE_RUS
+      </div>
+    </section>
+
+    <section id="eng" class="card">
+      <h2>English version</h2>
+      <!-- ENG content injected -->
+      <div class="content">
+        REPLACE_ENG
+      </div>
+    </section>
+
+    <footer class="footer">
+      <a href="index.html" class="btn">← Вернуться в портфолио</a>
+    </footer>
+  </main>
+
+  <script>
+    // Smooth anchor scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click',e=>{const id=a.getAttribute('href');if(id.length>1){e.preventDefault();document.querySelector(id)?.scrollIntoView({behavior:'smooth',block:'start'});} });
+    });
+  </script>
+</body>
+</html>
