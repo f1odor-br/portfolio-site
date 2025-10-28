@@ -1,0 +1,1 @@
+<!---- Image file tracked in repo via LFS or direct binary upload by user locally. If not present, fallback to external link. ---->
